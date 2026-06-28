@@ -1,1 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ave — Web and operations support for small businesses. WordPress, email marketing, Mailchimp, SOPs, and more." />
+  <meta name="keywords" content="web design, WordPress, email marketing, Mailchimp, HTML email, SOPs, operations support, Canva, brand guidelines" />
+  <title>Ave — Web &amp; Operations</title>
 
+  <!-- Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garant:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== LOADER ===================== -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <span class="loader__name">Ave</span>
+      <div class="loader__bar"><div class="loader__fill"></div></div>
+    </div>
+  </div>
+
+  <!-- ===================== CURSOR ===================== -->
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-follower" id="cursorFollower" aria-hidden="true"></div>
+
+  <!-- ===================== NAV ===================== -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+    <a href="#" class="nav__logo" aria-label="Ave — Home">Ave.</a>
+    <button class="nav__menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <div class="nav__links" id="navLinks" role="menu">
+      <a href="#about" role="menuitem">About</a>
+      <a href="#services" role="menuitem">Services</a>
+      <a href="#projects" role="menuitem">Work</a>
+      <a href="#process" role="menuitem">Process</a>
+      <a href="#contact" role="menuitem">Contact</a>
+    </div>
+    <a href="#contact" class="nav__cta">Let's Talk</a>
+  </nav>
+
+  <!-- Full-screen nav overlay for mobile -->
+  <div class="nav__overlay" id="navOverlay" aria-hidden="true">
+    <div class="nav__overlay-links">
+      <a href="#about" class="overlay-link">About</a>
+      <a href="#services" class="overlay-link">Services</a>
+      <a href="#projects" class="overlay-link">Work</a>
+      <a href="#process" class="overlay-link">Process</a>
+      <a href="#contact" class="overlay-link">Contact</a>
+    </div>
+    <p class="nav__overlay-tagline">Web, email, and operations support.</p>
+  </div>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero" aria-label="Hero">
+
+    <!-- Ambient floating shapes -->
+    <div class="hero__ambient" aria-hidden="true">
+      <div class="ambient-shape ambient-shape--1"></div>
+      <div class="ambient-shape ambient-shape--2"></div>
+      <div class="ambient-shape ambient-shape--3"></div>
+    </div>
+
+    <div class="hero__content">
+      <p class="hero__eyebrow reveal-text" data-delay="0">Web &amp; Operations Support</p>
+
+      <h1 class="hero__headline">
+        <span class="hero__line reveal-text" data-delay="100">Helping businesses</span>
+        <span class="hero__line hero__line--italic reveal-text" data-delay="200">look good</span>
+        <span class="hero__line reveal-text" data-delay="300">and work better.</span>
+      </h1>
+
+      <p class="hero__sub reveal-text" data-delay="400">
+        Whether you need a website refresh, help with email marketing, or someone to take ownership of the things that keep slipping through the cracks, I'm here to help.
+      </p>
+
+      <div class="hero__actions reveal-text" data-delay="500">
+        <a href="#projects" class="btn btn--primary magnetic">See My Work</a>
+        <a href="#about" class="btn btn--ghost">About Me &rarr;</a>
+      </div>
+    </div>
+
+    <!-- Scrolling marquee -->
+    <div class="hero__marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>WordPress</span>
+        <span class="marquee__dot">·</span>
+        <span>Web Design</span>
+        <span class="marquee__dot">·</span>
+        <span>Email Marketing</span>
+        <span class="marquee__dot">·</span>
+        <span>Mailchimp</span>
+        <span class="marquee__dot">·</span>
+        <span>HTML Email</span>
+        <span class="marquee__dot">·</span>
+        <span>SOPs</span>
+        <span class="marquee__dot">·</span>
+        <span>Canva</span>
+        <span class="marquee__dot">·</span>
+        <span>Brand Guidelines</span>
+        <span class="marquee__dot">·</span>
+        <span>Accessibility</span>
+        <span class="marquee__dot">·</span>
+        <span>Workflow Improvements</span>
+        <span class="marquee__dot">·</span>
+        <!-- Duplicate for seamless loop -->
+        <span>WordPress</span>
+        <span class="marquee__dot">·</span>
+        <span>Web Design</span>
+        <span class="marquee__dot">·</span>
+        <span>Email Marketing</span>
+        <span class="marquee__dot">·</span>
+        <span>Mailchimp</span>
+        <span class="marquee__dot">·</span>
+        <span>HTML Email</span>
+        <span class="marquee__dot">·</span>
+        <span>SOPs</span>
+        <span class="marquee__dot">·</span>
+        <span>Canva</span>
+        <span class="marquee__dot">·</span>
+        <span>Brand Guidelines</span>
+        <span class="marquee__dot">·</span>
+        <span>Accessibility</span>
+        <span class="marquee__dot">·</span>
+        <span>Workflow Improvements</span>
+        <span class="marquee__dot">·</span>
+      </div>
+    </div>
+
+    <div class="hero__scroll-hint" aria-label="Scroll down">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="about" id="about" aria-label="About">
+
+    <div class="about__grid">
+
+      <div class="about__left">
+        <p class="section-label fade-in">About</p>
+        <h2 class="about__headline fade-in">
+          Dependable.<br />
+          <em>Curious.</em><br />
+          Easy to work with.
+        </h2>
+      </div>
+
+      <div class="about__right">
+        <div class="about__image-wrap fade-in">
+          <div class="about__image-placeholder" aria-label="Portrait of Ave">
+            <div class="about__image-inner">
+              <span class="about__image-initials">A.</span>
+            </div>
+          </div>
+          <div class="about__image-accent" aria-hidden="true"></div>
+        </div>
+
+        <div class="about__text fade-in">
+          <p class="about__intro">
+            Hi, I'm Ave. I work on websites, email marketing, and operations support for small businesses.
+          </p>
+          <p>
+            My background is a bit of a mix, which I think is actually useful. On any given project I might be redesigning a WordPress site, building an HTML email template, writing SOPs, or figuring out why a workflow is more complicated than it needs to be. I enjoy that variety and I tend to pick up new tools quickly when a project calls for it.
+          </p>
+          <p>
+            If you're looking for someone who communicates well, pays attention to the details, and doesn't need constant direction, that's the kind of work partner I try to be. I'm still early in my freelance journey, but the work I've done so far has been meaningful and I take it seriously.
+          </p>
+        </div>
+
+        <!-- What I've Worked On -->
+        <div class="about__experience fade-in" aria-label="Project experience">
+          <p class="section-label">Things I've worked on</p>
+          <div class="experience__grid">
+            <div class="experience__item">Website redesigns</div>
+            <div class="experience__item">Website maintenance</div>
+            <div class="experience__item">Accessibility improvements</div>
+            <div class="experience__item">HTML email development</div>
+            <div class="experience__item">Mailchimp templates</div>
+            <div class="experience__item">Email automation planning</div>
+            <div class="experience__item">Pensight operations</div>
+            <div class="experience__item">SOP documentation</div>
+            <div class="experience__item">Brand guidelines</div>
+            <div class="experience__item">Canva graphics</div>
+            <div class="experience__item">Website mockups</div>
+            <div class="experience__item">Workflow improvements</div>
+            <div class="experience__item">Client support</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ===================== SERVICES ===================== -->
+  <section class="services" id="services" aria-label="Services">
+
+    <div class="services__header fade-in">
+      <p class="section-label">What I Do</p>
+      <h2 class="services__headline">
+        A few ways I can <em>help.</em>
+      </h2>
+    </div>
+
+    <div class="services__list" role="list">
+
+      <div class="service__item" role="listitem">
+        <div class="service__number" aria-hidden="true">01</div>
+        <div class="service__body">
+          <h3>Web Design &amp; WordPress</h3>
+          <p>If your website feels outdated, hard to navigate, or just doesn't reflect where your business is now, that's something worth fixing. From full redesigns to ongoing maintenance and accessibility improvements, this is one of the things I spend the most time on.</p>
+          <div class="service__tags">
+            <span>WordPress</span><span>HTML/CSS</span><span>Accessibility</span><span>Maintenance</span>
+          </div>
+        </div>
+        <div class="service__visual" aria-hidden="true">
+          <div class="service__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="4" y="8" width="40" height="28" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M4 16h40" stroke="currentColor" stroke-width="1.5"/><circle cx="10" cy="12" r="1.5" fill="currentColor"/><circle cx="16" cy="12" r="1.5" fill="currentColor"/><path d="M16 44h16M24 36v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="service__item" role="listitem">
+        <div class="service__number" aria-hidden="true">02</div>
+        <div class="service__body">
+          <h3>Email Marketing &amp; Mailchimp</h3>
+          <p>If your email list is sitting there doing nothing, or your newsletters look different every time you send them, there's a lot of room to improve. From reusable templates to automation sequences, getting your emails organised makes a real difference.</p>
+          <div class="service__tags">
+            <span>Mailchimp</span><span>HTML Email</span><span>Templates</span><span>Automations</span>
+          </div>
+        </div>
+        <div class="service__visual" aria-hidden="true">
+          <div class="service__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="4" y="10" width="40" height="28" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M4 16l20 12 20-12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="service__item" role="listitem">
+        <div class="service__number" aria-hidden="true">03</div>
+        <div class="service__body">
+          <h3>Operations &amp; Workflow Support</h3>
+          <p>If you're spending too much time on repetitive tasks, or things keep falling through the cracks because nothing is properly documented, that's worth addressing. Whether it's writing SOPs, tidying up workflows, or supporting day-to-day operations, this is the kind of work that often gets overlooked but makes everything else easier.</p>
+          <div class="service__tags">
+            <span>SOPs</span><span>Notion</span><span>Pensight</span><span>Workflows</span>
+          </div>
+        </div>
+        <div class="service__visual" aria-hidden="true">
+          <div class="service__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="24" r="5" stroke="currentColor" stroke-width="1.5"/><circle cx="36" cy="12" r="5" stroke="currentColor" stroke-width="1.5"/><circle cx="36" cy="36" r="5" stroke="currentColor" stroke-width="1.5"/><path d="M17 22l14-7M17 26l14 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="service__item" role="listitem">
+        <div class="service__number" aria-hidden="true">04</div>
+        <div class="service__body">
+          <h3>Brand &amp; Canva Design</h3>
+          <p>If your visuals feel inconsistent across your website, social media, and emails, a simple brand guidelines document and a set of reusable Canva templates can go a long way. Nothing over-complicated, just something clear your team can actually follow.</p>
+          <div class="service__tags">
+            <span>Canva</span><span>Brand Guidelines</span><span>Social Templates</span>
+          </div>
+        </div>
+        <div class="service__visual" aria-hidden="true">
+          <div class="service__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="24" cy="24" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M24 4v4M24 40v4M4 24h4M40 24h4M9.37 9.37l2.83 2.83M35.8 35.8l2.83 2.83M9.37 38.63l2.83-2.83M35.8 12.2l2.83-2.83" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="service__item" role="listitem">
+        <div class="service__number" aria-hidden="true">05</div>
+        <div class="service__body">
+          <h3>Website Mockups &amp; General Support</h3>
+          <p>Sometimes you want to see where a project is headed before committing to it. A mockup at the start of a website project can save a lot of back-and-forth later. Beyond that, I'm happy to support with technical tasks, admin, or anything that doesn't quite fit into a neat category.</p>
+          <div class="service__tags">
+            <span>Mockups</span><span>Figma</span><span>Canva</span><span>General Support</span>
+          </div>
+        </div>
+        <div class="service__visual" aria-hidden="true">
+          <div class="service__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="8" y="4" width="28" height="36" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M14 14h16M14 20h16M14 26h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="36" cy="36" r="7" stroke="currentColor" stroke-width="1.5"/><path d="M40.5 40.5l4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ===================== PROJECTS ===================== -->
+  <section class="projects" id="projects" aria-label="Selected Work">
+
+    <div class="projects__header fade-in">
+      <p class="section-label">Selected Work</p>
+      <h2 class="projects__headline">
+        A few things <em>I've done.</em>
+      </h2>
+    </div>
+
+    <!-- Project 01 -->
+    <article class="project" data-index="01" aria-label="Project: Optical Store Website Redesign">
+      <div class="project__media fade-in">
+        <div class="project__image-wrap">
+          <div class="project__image project__image--optical">
+            <div class="project__image-inner">
+              <span>Optical Store</span>
+            </div>
+          </div>
+        </div>
+        <div class="project__tag">WordPress / Web Design</div>
+      </div>
+      <div class="project__info fade-in">
+        <p class="project__num">01 / 05</p>
+        <h3>Optical Store Website Redesign</h3>
+        <div class="project__meta">
+          <div>
+            <p class="project__label">What they needed</p>
+            <p>An optical store with an outdated website that wasn't reflecting the quality of the business or making it easy for customers to find information and get in touch.</p>
+          </div>
+          <div>
+            <p class="project__label">What I worked on</p>
+            <p>Redesigned the WordPress site from scratch, improved the layout and navigation, added an appointment booking section, and made sure the site looked good on mobile. I also carried out accessibility improvements throughout.</p>
+          </div>
+          <div>
+            <p class="project__label">The value</p>
+            <p class="project__outcome">A site the client was proud to share, with clearer information and a smoother experience for visitors.</p>
+          </div>
+        </div>
+        <div class="project__tools">
+          <span>WordPress</span><span>HTML/CSS</span><span>Canva</span><span>Accessibility</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Project 02 -->
+    <article class="project project--reverse" data-index="02" aria-label="Project: Mailchimp Newsletter Templates">
+      <div class="project__media fade-in">
+        <div class="project__image-wrap">
+          <div class="project__image project__image--mailchimp">
+            <div class="project__image-inner">
+              <span>Email Templates</span>
+            </div>
+          </div>
+        </div>
+        <div class="project__tag">Email Marketing</div>
+      </div>
+      <div class="project__info fade-in">
+        <p class="project__num">02 / 05</p>
+        <h3>Mailchimp Newsletter Templates</h3>
+        <div class="project__meta">
+          <div>
+            <p class="project__label">What they needed</p>
+            <p>A client who was sending newsletters manually, without a consistent design or template, wanted a cleaner setup they could reuse without starting from scratch every time.</p>
+          </div>
+          <div>
+            <p class="project__label">What I worked on</p>
+            <p>Built branded Mailchimp templates using custom HTML email code, so the newsletters matched their visual identity. Also helped plan out a basic automation sequence for new subscribers.</p>
+          </div>
+          <div>
+            <p class="project__label">The value</p>
+            <p class="project__outcome">The client could now send a polished newsletter in a fraction of the time, with a consistent look across every send.</p>
+          </div>
+        </div>
+        <div class="project__tools">
+          <span>Mailchimp</span><span>HTML Email</span><span>Canva</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Project 03 -->
+    <article class="project" data-index="03" aria-label="Project: Pensight Operations Support">
+      <div class="project__media fade-in">
+        <div class="project__image-wrap">
+          <div class="project__image project__image--pensight">
+            <div class="project__image-inner">
+              <span>Pensight Ops</span>
+            </div>
+          </div>
+        </div>
+        <div class="project__tag">Operations</div>
+      </div>
+      <div class="project__info fade-in">
+        <p class="project__num">03 / 05</p>
+        <h3>Pensight Operations Support</h3>
+        <div class="project__meta">
+          <div>
+            <p class="project__label">What they needed</p>
+            <p>A creator using Pensight to sell their services needed help getting the operational side organised, including how offers were set up and how the client experience was managed.</p>
+          </div>
+          <div>
+            <p class="project__label">What I worked on</p>
+            <p>Helped set up and organise their Pensight workspace, documented processes so things were easier to repeat, and identified a few areas where the client journey could be smoother.</p>
+          </div>
+          <div>
+            <p class="project__label">The value</p>
+            <p class="project__outcome">A more organised setup that made it easier to onboard new clients and keep things running consistently.</p>
+          </div>
+        </div>
+        <div class="project__tools">
+          <span>Pensight</span><span>Notion</span><span>SOP Documentation</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Project 04 -->
+    <article class="project project--reverse" data-index="04" aria-label="Project: Brand Guidelines">
+      <div class="project__media fade-in">
+        <div class="project__image-wrap">
+          <div class="project__image project__image--brand">
+            <div class="project__image-inner">
+              <span>Brand Guidelines</span>
+            </div>
+          </div>
+        </div>
+        <div class="project__tag">Brand Identity</div>
+      </div>
+      <div class="project__info fade-in">
+        <p class="project__num">04 / 05</p>
+        <h3>Brand Guidelines &amp; Canva Templates</h3>
+        <div class="project__meta">
+          <div>
+            <p class="project__label">What they needed</p>
+            <p>A small business whose visuals had evolved without much planning. Their logo, social posts, and email designs didn't feel like they belonged to the same brand.</p>
+          </div>
+          <div>
+            <p class="project__label">What I worked on</p>
+            <p>Put together a simple brand guidelines document covering colours, fonts, and usage rules. Then created a set of Canva templates for social posts and stories that aligned with those guidelines.</p>
+          </div>
+          <div>
+            <p class="project__label">The value</p>
+            <p class="project__outcome">The client had a clear reference to work from and reusable templates they could update themselves without needing to start over each time.</p>
+          </div>
+        </div>
+        <div class="project__tools">
+          <span>Canva</span><span>Brand Guidelines</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Project 05 -->
+    <article class="project" data-index="05" aria-label="Project: Website Mockups">
+      <div class="project__media fade-in">
+        <div class="project__image-wrap">
+          <div class="project__image project__image--mockups">
+            <div class="project__image-inner">
+              <span>Web Mockups</span>
+            </div>
+          </div>
+        </div>
+        <div class="project__tag">Web Design</div>
+      </div>
+      <div class="project__info fade-in">
+        <p class="project__num">05 / 05</p>
+        <h3>Website Mockups</h3>
+        <div class="project__meta">
+          <div>
+            <p class="project__label">What they needed</p>
+            <p>Before committing to a full website build, clients wanted to see what the design could look like so they could give feedback early and avoid surprises later.</p>
+          </div>
+          <div>
+            <p class="project__label">What I worked on</p>
+            <p>Created desktop and mobile mockups showing proposed layouts, typography, and colour choices, so clients could visualise the direction and request changes before any development started.</p>
+          </div>
+          <div>
+            <p class="project__label">The value</p>
+            <p class="project__outcome">Clients felt more confident going into the build stage, and the feedback process was much easier with something visual to respond to.</p>
+          </div>
+        </div>
+        <div class="project__tools">
+          <span>Canva</span><span>Figma</span><span>WordPress</span>
+        </div>
+      </div>
+    </article>
+
+  </section>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section class="skills" id="skills" aria-label="Tools and skills">
+    <div class="skills__header fade-in">
+      <p class="section-label">Tools &amp; Skills</p>
+      <h2 class="skills__headline fade-in">
+        Tools I work with <em>regularly.</em>
+      </h2>
+    </div>
+
+    <div class="skills__orbit-wrap fade-in" aria-label="Skills visualization">
+      <!-- Orbit rings rendered in JS, fallback list below for a11y -->
+      <canvas class="skills__canvas" id="skillsCanvas" aria-hidden="true"></canvas>
+      <noscript>
+        <ul class="skills__fallback">
+          <li>WordPress</li><li>Web Design</li><li>HTML/CSS</li>
+          <li>Mailchimp</li><li>Email Marketing</li><li>HTML Email</li>
+          <li>Zapier</li><li>Make</li><li>Airtable</li>
+          <li>Canva</li><li>Brand Identity</li><li>Figma</li>
+          <li>SOPs</li><li>Notion</li><li>Lead Generation</li>
+        </ul>
+      </noscript>
+    </div>
+  </section>
+
+  <!-- ===================== PROCESS ===================== -->
+  <section class="process" id="process" aria-label="My Process">
+
+    <div class="process__header fade-in">
+      <p class="section-label">How I Work</p>
+      <h2 class="process__headline fade-in">
+        Simple, clear, <em>no surprises.</em>
+      </h2>
+    </div>
+
+    <div class="process__steps" role="list">
+
+      <div class="process__step fade-in" role="listitem">
+        <div class="process__step-number" aria-hidden="true">01</div>
+        <div class="process__step-body">
+          <h3>Understand</h3>
+          <p>Before anything else, I want to understand what you're working on and what you actually need. That usually means a short conversation where I ask questions and listen more than I talk.</p>
+        </div>
+        <div class="process__step-accent" aria-hidden="true"></div>
+      </div>
+
+      <div class="process__step fade-in" role="listitem">
+        <div class="process__step-number" aria-hidden="true">02</div>
+        <div class="process__step-body">
+          <h3>Plan</h3>
+          <p>Once the scope is clear, I'll put together a plan covering what we're doing, in what order, and by when. Nothing complicated, just enough to make sure we're on the same page before work starts.</p>
+        </div>
+        <div class="process__step-accent" aria-hidden="true"></div>
+      </div>
+
+      <div class="process__step fade-in" role="listitem">
+        <div class="process__step-number" aria-hidden="true">03</div>
+        <div class="process__step-body">
+          <h3>Build</h3>
+          <p>This is where the actual work happens. I'll keep you updated along the way and flag anything early if something comes up. You won't be left wondering where things stand.</p>
+        </div>
+        <div class="process__step-accent" aria-hidden="true"></div>
+      </div>
+
+      <div class="process__step fade-in" role="listitem">
+        <div class="process__step-number" aria-hidden="true">04</div>
+        <div class="process__step-body">
+          <h3>Review</h3>
+          <p>Before anything is final, we review it together. If something needs adjusting, that's what this step is for. Getting the details right matters more to me than moving fast.</p>
+        </div>
+        <div class="process__step-accent" aria-hidden="true"></div>
+      </div>
+
+      <div class="process__step fade-in" role="listitem">
+        <div class="process__step-number" aria-hidden="true">05</div>
+        <div class="process__step-body">
+          <h3>Support</h3>
+          <p>Once the project wraps up, I'm still here if you have questions or need something adjusted. A lot of my best work comes from ongoing relationships, not one-off projects.</p>
+        </div>
+        <div class="process__step-accent" aria-hidden="true"></div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ===================== TESTIMONIALS ===================== -->
+  <section class="testimonials" id="testimonials" aria-label="Testimonials">
+
+    <div class="testimonials__header fade-in">
+      <p class="section-label">What clients say</p>
+    </div>
+
+    <div class="testimonials__carousel">
+      <div class="testimonial active fade-in" aria-live="polite">
+        <blockquote class="testimonial__quote">
+          "Ave is very thorough and picks things up really quickly. She asks good questions and doesn't need a lot of hand-holding, which honestly makes such a difference when you're busy."
+        </blockquote>
+        <cite class="testimonial__author">
+          <span class="testimonial__name">Client feedback</span>
+          <span class="testimonial__role">Small business owner</span>
+        </cite>
+      </div>
+
+      <div class="testimonial fade-in">
+        <blockquote class="testimonial__quote">
+          "The website came out really well. She kept me updated throughout and the whole process was smoother than I expected. Would definitely work with her again."
+        </blockquote>
+        <cite class="testimonial__author">
+          <span class="testimonial__name">Client feedback</span>
+          <span class="testimonial__role">Service business owner</span>
+        </cite>
+      </div>
+
+      <div class="testimonial fade-in">
+        <blockquote class="testimonial__quote">
+          "I really appreciated how organised she was. Everything was documented, communicated clearly, and delivered on time. That's rarer than you'd think."
+        </blockquote>
+        <cite class="testimonial__author">
+          <span class="testimonial__name">Client feedback</span>
+          <span class="testimonial__role">Online business owner</span>
+        </cite>
+      </div>
+    </div>
+
+    <div class="testimonials__controls" aria-label="Testimonial navigation">
+      <button class="test-btn test-btn--prev" id="testPrev" aria-label="Previous testimonial">&#8592;</button>
+      <div class="test-dots" id="testDots" aria-hidden="true">
+        <span class="test-dot active"></span>
+        <span class="test-dot"></span>
+        <span class="test-dot"></span>
+      </div>
+      <button class="test-btn test-btn--next" id="testNext" aria-label="Next testimonial">&#8594;</button>
+    </div>
+
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="contact" id="contact" aria-label="Contact">
+
+    <div class="contact__grid">
+
+      <div class="contact__left fade-in">
+        <p class="section-label">Get in touch</p>
+        <h2 class="contact__headline">
+          Think we might be<br />a good <em>fit?</em>
+        </h2>
+        <p class="contact__sub">
+          Feel free to reach out and tell me a bit about what you're working on. There's no pressure and no commitment. If it sounds like something I can genuinely help with, I'll say so. If it's not quite the right match, I'll be honest about that too.
+        </p>
+        <div class="contact__details">
+          <a href="mailto:hello@aveva.co" class="contact__link magnetic">hello@aveva.co</a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="contact__link magnetic" aria-label="LinkedIn (opens in new tab)">LinkedIn &#8599;</a>
+        </div>
+      </div>
+
+      <div class="contact__right fade-in">
+        <form class="contact__form" novalidate aria-label="Contact form">
+          <div class="form__group">
+            <label for="name" class="form__label">Your Name</label>
+            <input type="text" id="name" name="name" class="form__input" required autocomplete="name" placeholder="Jane Smith" />
+          </div>
+          <div class="form__group">
+            <label for="email" class="form__label">Email Address</label>
+            <input type="email" id="email" name="email" class="form__input" required autocomplete="email" placeholder="jane@company.com" />
+          </div>
+          <div class="form__group">
+            <label for="service" class="form__label">What do you need help with?</label>
+            <select id="service" name="service" class="form__input form__select">
+              <option value="" disabled selected>Select an area</option>
+              <option value="web-design">Website design or WordPress</option>
+              <option value="email-marketing">Email marketing or Mailchimp</option>
+              <option value="operations">Operations or workflow support</option>
+              <option value="brand-design">Brand guidelines or Canva design</option>
+              <option value="sop">SOP documentation</option>
+              <option value="other">Something else</option>
+            </select>
+          </div>
+          <div class="form__group">
+            <label for="message" class="form__label">Tell me a bit about your project</label>
+            <textarea id="message" name="message" class="form__input form__textarea" required placeholder="What are you working on? What's the challenge?" rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full magnetic">
+            Send Message <span class="btn__arrow">&#8594;</span>
+          </button>
+          <p class="form__note">I'll get back to you within a day or two.</p>
+        </form>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+      <a href="#" class="footer__logo" aria-label="Back to top">Ave.</a>
+      <p class="footer__tagline">Web &amp; Operations Support</p>
+      <p class="footer__copy">© <span id="footerYear"></span> Ave. All rights reserved.</p>
+    </div>
+    <a href="#hero" class="footer__back-top magnetic" aria-label="Back to top">↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
