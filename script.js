@@ -1,9 +1,9 @@
 /**
  * Ave Portfolio — script.js
  * Handles: loader, cursor, nav, scroll reveal,
- *          hero reveal, counter animation,
- *          skills orbit canvas, testimonial carousel,
- *          magnetic elements, contact form.
+ *          hero reveal, skills orbit canvas,
+ *          testimonial carousel, magnetic elements,
+ *          contact form, parallax, smooth scroll.
  */
 
 'use strict';
@@ -521,7 +521,6 @@ const init = () => {
   initNav();
   initScrollReveal();
   initStaggered();
-  initCounters();
   initSkillsCanvas();
   initTestimonials();
   initMagnetic();
