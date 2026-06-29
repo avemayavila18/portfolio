@@ -429,7 +429,8 @@ em {
 .hero__line--italic { 
   font-style: italic; 
   color: var(--muted); 
-  margin-top: 15rem; /* Adjust this number higher or lower depending on how much space you want */
+  margin-top: 3rem; /* Adjust this number higher or lower depending on how much space you want */
+  margin-bottom: 3rem;
   display: block;   /* This ensures the margin rule works properly on this line */
 }
 
