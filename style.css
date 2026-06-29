@@ -426,7 +426,12 @@ em {
 }
 
 .hero__line { display: block; }
-.hero__line--italic { font-style: italic; color: var(--muted); }
+.hero__line--italic { 
+  font-style: italic; 
+  color: var(--muted); 
+  margin-top: 15px; /* Adjust this number higher or lower depending on how much space you want */
+  display: block;   /* This ensures the margin rule works properly on this line */
+}
 
 .hero__sub {
   font-size: clamp(14px, 1.3vw, 17px);
