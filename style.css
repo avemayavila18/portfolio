@@ -465,6 +465,7 @@ em {
 
 .marquee__track {
   display: flex;
+  margin-top: 3rem;
   align-items: center;
   gap: 0;
   white-space: nowrap;
