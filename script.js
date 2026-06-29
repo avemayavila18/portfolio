@@ -2,7 +2,7 @@
  * Ave Portfolio — script.js
  * Handles: loader, cursor, nav, scroll reveal,
  *          hero reveal, skills orbit canvas,
- *          testimonial carousel, magnetic elements,
+ *          magnetic elements,
  *          contact form, parallax, smooth scroll.
  */
 
@@ -370,39 +370,6 @@ const initSkillsCanvas = () => {
 };
 
 /* ============================================================
-   TESTIMONIAL CAROUSEL
-   ============================================================ */
-const initTestimonials = () => {
-  const items  = qsa('.testimonial');
-  const dots   = qsa('.test-dot');
-  const prevBtn= qs('#testPrev');
-  const nextBtn= qs('#testNext');
-  if (!items.length) return;
-
-  let current = 0;
-
-  const show = (idx) => {
-    items[current].classList.remove('active');
-    dots[current].classList.remove('active');
-    current = (idx + items.length) % items.length;
-    items[current].classList.add('active');
-    dots[current].classList.add('active');
-  };
-
-  prevBtn?.addEventListener('click', () => show(current - 1));
-  nextBtn?.addEventListener('click', () => show(current + 1));
-
-  // Auto-advance
-  let autoPlay = setInterval(() => show(current + 1), 6000);
-  [prevBtn, nextBtn].forEach(btn => {
-    btn?.addEventListener('click', () => {
-      clearInterval(autoPlay);
-      autoPlay = setInterval(() => show(current + 1), 6000);
-    });
-  });
-};
-
-/* ============================================================
    MAGNETIC BUTTONS
    ============================================================ */
 const initMagnetic = () => {
@@ -522,7 +489,6 @@ const init = () => {
   initScrollReveal();
   initStaggered();
   initSkillsCanvas();
-  initTestimonials();
   initMagnetic();
   initContactForm();
   initParallax();
